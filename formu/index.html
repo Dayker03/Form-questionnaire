@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Encuesta</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Formulario de Encuesta</h1>
+  <p id="description">Por favor, complete este formulario para ayudarnos a mejorar nuestros servicios.</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Nombre:</label>
+    <input id="name" type="text" placeholder="Ingrese su nombre" required>
+
+    <label id="email-label" for="email">Correo Electrónico:</label>
+    <input id="email" type="email" placeholder="Ingrese su correo" required>
+
+    <label id="number-label" for="number">Edad:</label>
+    <input id="number" type="number" min="18" max="100" placeholder="Ingrese su edad">
+
+    <label for="dropdown">Seleccione una opción:</label>
+    <select id="dropdown">
+      <option value="opcion1">Opción 1</option>
+      <option value="opcion2">Opción 2</option>
+    </select>
+
+    <p>Seleccione una opción:</p>
+    <input type="radio" name="opcion" value="radio1"> Opción 1
+    <input type="radio" name="opcion" value="radio2"> Opción 2
+
+    <p>Seleccione sus intereses</p>
+    <input type="checkbox" value="Interes1"> Interés 1
+    <input type="checkbox" value="Interes2"> Interés 2 
+
+    <label for="comments">Comentarios adicionales:</label>
+    <textarea id="comments" placeholder="Ingrese sus comentarios"></textarea>
+
+    <button id="submit" type="submit">Enviar</button>
+    
+  </form>
+</body>
+</html>
